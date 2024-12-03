@@ -1,8 +1,18 @@
-# React + Vite
+Password Validator
+This project implements a Password Validator in React. It checks the strength of a password entered by the user and provides feedback such as "Good," "Very Good," "Strong," or "Excellent" based on specific criteria.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Dynamic Feedback: Provides real-time feedback on the strength of the entered password.
+Custom Criteria: Password strength is evaluated based on length, uppercase/lowercase characters, numbers, and special characters.
+User-Friendly UI: Clear and simple design for an intuitive user experience.
 
-Currently, two official plugins are available:
+Password Strength Criteria
+Good: Minimum of 6 characters.
+Very Good: Includes both uppercase and lowercase letters.
+Strong: Includes at least one number.
+Excellent: Includes at least one special character (e.g., !@#$%^&*).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used
+React: For building the dynamic UI.
+CSS: For styling the components.
+
