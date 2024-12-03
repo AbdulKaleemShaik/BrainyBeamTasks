@@ -1,8 +1,17 @@
-# React + Vite
+Chess Board Game with Redux
+This project is a simple Chess Board Game implemented with React and Redux. The board alternates between black and white squares.
+Clicking a square changes its color:
+White squares turn yellow.
+Black squares turn red.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Dynamic Chess Board: An 8x8 chess board with alternating black and white squares.
+Color Change on Click:
+White squares → Yellow.
+Black squares → Red.
+State Management with Redux: Manage the state of the chess board using Redux.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used
+React: For building the UI.
+Redux: For state management.
+CSS: For styling the chess board.
