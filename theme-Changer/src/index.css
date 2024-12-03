@@ -1,0 +1,70 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.dark {
+  --background-color: #1a1a1a;
+  --text-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+body.light {
+  --button-bg: #f0f0f0;
+  --button-text: #333;
+  --button-hover-bg: #e0e0e0;
+}
+
+body.dark {
+  --button-bg: #333;
+  --button-text: #f0f0f0;
+  --button-hover-bg: #555;
+}
