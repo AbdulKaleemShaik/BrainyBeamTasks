@@ -29,15 +29,4 @@ ThemeToggle.js: A component to toggle between light and dark themes.
 localStorage: Used to save and retrieve the theme preference.
 
 
-File Structure
 
-src/
-├── components/
-│   ├── ThemeToggle.js       # Theme toggle button component
-├── context/
-│   ├── ThemeContext.js      # React Context for theme management
-├── styles/
-│   ├── light.css            # Light theme styles
-│   ├── dark.css             # Dark theme styles
-├── App.js                   # Root component
-├── index.js                 # Entry point
