@@ -1,8 +1,43 @@
-# React + Vite
+Theme Changer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project implements a global app theme switcher using React Context API and local storage. The theme switcher allows users to toggle between light and dark themes, with their preferences persisted even after the app is reloaded.
 
-Currently, two official plugins are available:
+Features
+Global Theme Management: Switch between light and dark themes across the entire app.
+Persistent User Preference: Save the selected theme to local storage so it persists across sessions.
+React Context API: Manage and share the theme state across the app without prop drilling.
+Responsive Design: Ensure a visually pleasing experience on all devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used
+React: Frontend framework.
+Context API: State management.
+Local Storage: Persisting user-selected theme.
+CSS: Styling the light and dark themes.
+
+
+
+Usage
+Light/Dark Theme Switching
+The app loads the theme based on the saved preference in local storage. If no preference exists, it defaults to the light theme.
+Use the toggle button in the app to switch between light and dark themes.
+The selected theme applies globally across all components.
+
+Key Components
+ThemeProvider: A React Context Provider that manages the current theme state and provides it to child components.
+App.js: The root component, where the ThemeProvider wraps the entire app.
+ThemeToggle.js: A component to toggle between light and dark themes.
+localStorage: Used to save and retrieve the theme preference.
+
+
+File Structure
+
+src/
+├── components/
+│   ├── ThemeToggle.js       # Theme toggle button component
+├── context/
+│   ├── ThemeContext.js      # React Context for theme management
+├── styles/
+│   ├── light.css            # Light theme styles
+│   ├── dark.css             # Dark theme styles
+├── App.js                   # Root component
+├── index.js                 # Entry point
